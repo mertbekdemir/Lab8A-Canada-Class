@@ -259,6 +259,33 @@ public class Canada
     }
 
     public String[] getProvincesWhoseNameStartsWith(char letter) {
-        return null;
+        int i = 0;
+        int j = 0;
+        int numOfProv = 0;
+        
+        String[] matchingProvinces;
+        
+        while(i < provinces.length){
+        if(letter != '\0' && letter != ' ' && provinces[i].getName().toUpperCase().startsWith((String.valueOf(letter).toUpperCase()))){
+            numOfProv ++;
+        }
+            i++;
+    }
+        if(numOfProv > 0){
+            matchingProvinces = new String[numOfProv];
+        }else{
+            return null;
+        }
+        
+        i = 0;
+        while(i < provinces.length){
+        if(letter != '\0' && letter != ' ' && provinces[i].getName().toUpperCase().startsWith((String.valueOf(letter).toUpperCase()))){
+            matchingProvinces[j] = provinces[i].getName();
+            System.out.println(matchingProvinces[j]);
+            J++;
+        }
+            i++;
+        }
+        return matchingProvinces;
     }
 }
