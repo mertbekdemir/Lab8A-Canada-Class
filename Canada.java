@@ -7,21 +7,21 @@
 public class Canada
 {
     // Constants
-    private static final int BC = 0;
-    private static final int AB = 1;
-    private static final int SK = 2;
-    private static final int MB = 3;
-    private static final int ON = 4;
-    private static final int QC = 5;
-    private static final int NB = 6;
-    private static final int NS = 7;
-    private static final int PE = 8;
-    private static final int NL = 9;
-    private static final int YK = 10;
-    private static final int NT = 11;
-    private static final int NV = 12;
-    private static final int NUM_PROVINCES = 13;
-    private static final int NO_SUCH_PROVINCE = -1;
+    public static final int BC = 0;
+    public static final int AB = 1;
+    public static final int SK = 2;
+    public static final int MB = 3;
+    public static final int ON = 4;
+    public static final int QC = 5;
+    public static final int NB = 6;
+    public static final int NS = 7;
+    public static final int PE = 8;
+    public static final int NL = 9;
+    public static final int YK = 10;
+    public static final int NT = 11;
+    public static final int NV = 12;
+    public static final int NUM_PROVINCES = 13;
+    public static final int NO_SUCH_PROVINCE = -1;
 
     // Instance variables
     private ProvinceTerritory[] provinces;
